@@ -4,9 +4,14 @@ const { DataTypes } = require('sequelize');
 module.exports = (sequelize) => {
 
   sequelize.define('film', {
+    id: {
+      type: DataTypes.UUID,
+      allowNull: false,
+      unique:true,
+      primaryKey: true
+    },
     name: {
       type: DataTypes.STRING,
-      unique:true,
       allowNull: false
     },
     description: {

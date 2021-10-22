@@ -4,6 +4,12 @@ const { DataTypes } = require('sequelize');
 module.exports = (sequelize) => {
 
   sequelize.define('actor', {
+    id: {
+      type: DataTypes.UUID,
+      allowNull: false,
+      unique:true,
+      primaryKey: true
+    },
     first_name: {
       type: DataTypes.STRING,
       allowNull: false

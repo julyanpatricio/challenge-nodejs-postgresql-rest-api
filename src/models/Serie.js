@@ -20,7 +20,7 @@ module.exports = (sequelize) => {
         min:1900
       }
     },
-    seasons: {
+    number_seasons: {
       type: DataTypes.INTEGER,
       validate: {
         isNumeric: true,
