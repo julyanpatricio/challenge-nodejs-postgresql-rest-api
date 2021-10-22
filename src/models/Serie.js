@@ -39,6 +39,6 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING,
       defaultValue: 'https://png.pngtree.com/png-clipart/20210619/ourlarge/pngtree-family-kids-watching-tv-series-illustration-png-image_3467842.jpg'
     }
-  });
+  },{timestamps: false});
 
 };

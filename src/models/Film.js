@@ -32,6 +32,6 @@ module.exports = (sequelize) => {
       type: DataTypes.STRING,
       defaultValue: 'https://www.rcinet.ca/eye-on-the-arctic/wp-content/uploads/sites/30/2014/07/iStock_000008658353Small.jpg'
     }
-  });
+  },{timestamps: false});
 
 };

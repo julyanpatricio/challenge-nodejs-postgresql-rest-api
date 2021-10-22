@@ -19,6 +19,6 @@ module.exports = (sequelize) => {
         min:1900
       }
     },
-  });
+  },{timestamps: false});
 
 };
