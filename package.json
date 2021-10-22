@@ -1,0 +1,11 @@
+{
+  "name": "challenge-nodejs-postgresql-rest-api",
+  "version": "1.0.0",
+  "description": "challenge for job postulation in improvein",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "julian patricio rodriguez gomes",
+  "license": "ISC"
+}
