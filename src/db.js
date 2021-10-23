@@ -34,7 +34,7 @@ sequelize.models = Object.fromEntries(capsEntries);
 
 
 // to make relationships, we deconstruct the models
-const { Actor, Director, Episode, Film, Season, Serie } = sequelize.models;
+const { Actor, Director, Episode, Film, Season, Serie, User } = sequelize.models;
 
 // Relationshps
 Actor.belongsToMany(Film, { through: 'actor_film', timestamps: false });
@@ -57,5 +57,5 @@ Season.belongsTo(Serie)
 
 module.exports = {
   conn: sequelize,     // para importart la conexión { conn } = require('./db.js');
-  Actor, Director, Episode, Film, Season, Serie
+  Actor, Director, Episode, Film, Season, Serie, User
 };
