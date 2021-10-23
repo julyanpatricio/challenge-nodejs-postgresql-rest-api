@@ -27,6 +27,7 @@ You need to set environment variables within an .env file in the project's base 
 > `DB_NAME=challenge_improvein`
 >
 > `TOKEN_SECRET=yourtextsecret`
+* In your postgresql database create an empty database with the name "challenge_improvein"
 
 
 ## run the project
