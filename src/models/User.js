@@ -15,6 +15,9 @@ module.exports = (sequelize) => {
     email: {
       type: DataTypes.STRING,
     },
+    refresh_token: {
+      type: DataTypes.UUID
+    }
   });
 
 };

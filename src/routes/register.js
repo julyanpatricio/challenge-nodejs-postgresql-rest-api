@@ -13,11 +13,10 @@ const schemaUser = Joi.object({
 router.post('/', async (req, res, next) => {
 
   const { error } = schemaUser.validate(req.body)
-
   if(error) return res.status(400).json({error: error.details[0].message})
   
   let {name, email, password} = req.body
-  if(await User.findOne({where:{email}})) return res.json({"error": "Email already registered"})
+  if(await User.findOne({where:{email}})) return res.json({error: "Email already registered"})
 
   try {
     const cycles = await bcrypt.genSalt(10);
